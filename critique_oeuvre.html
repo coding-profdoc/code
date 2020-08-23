@@ -10,7 +10,7 @@
 			font-family: Arial, Helvetica, sans-serif;
 		}
 		
-		.h1,h3 {
+		h1,h3 {
 			color: #941341;
 			font-weight: bold;
 		}
@@ -36,12 +36,11 @@
 
 <body>
 	<h1>Générateur en ligne de critique littéraire</h1>
-	<br /> <br />
+	<br />
 Esidoc permet de donner son avis de lecteur, appelé aussi critique littéraire. Elle vise à <b>relever les qualités et les défauts</b> d’un livre de fiction (roman, BD...) ou documentaire.
 Faire une critique, c’est <b>justifier de manière convaincante et personnelle son opinion</b>. On <b>partage son avis</b> avec les autres.
-	<br /> <br />
 Pour publier ses critiques sur les livres du CDI, il faut d'abord se connecter à Esidoc via l'ENT. Ensuite, il faut chercher le livre dans Esidoc puis cliquer sur <b>Ajouter un avis</b></color>
-	<br /><br />
+	<br />
 	<h1>Présentation du livre</h1>
 <br />
 <form name="titre">
@@ -55,7 +54,7 @@ Pour publier ses critiques sur les livres du CDI, il faut d'abord se connecter �
 <form name="livre">
 	<h3>De quel type de livre s'agit-il ?</h3><br />
 	<input type="radio" name="livre" value="un album" />album    
-	<input type="radio" name="livre" value="une bande-dessinée" />bandes-dessinées    
+	<input type="radio" name="livre" value="une bande-dessinée" />bande-dessinée    
     <input type="radio" name="livre" value="un conte" />conte
     <input type="radio" name="livre" value="un livre documentaire" />livre documentaire    
 	<input type="radio" name="livre" value="un manga" />manga    
@@ -80,7 +79,7 @@ Pour publier ses critiques sur les livres du CDI, il faut d'abord se connecter �
     <input type="radio" name="genre" value="de science-fiction" />science-fiction    
 	<input type="radio" name="genre" value="de société" />société<br />
 	<input type="radio" name="genre" value="[précisions sur le genre de l'histoire ou sur le thème du livre documentaire]" />autre [à préciser une fois la critique générée]
-		<br /><br />
+	<br /><br />
 </form>
 <form name="theme">
 	<h3>Quel est le thème principal du livre ?</h3><br />
@@ -160,7 +159,7 @@ Pour publier ses critiques sur les livres du CDI, il faut d'abord se connecter �
   </form>
   
 <form name="ecriture">
-<h3>Que pensez-vous de la façon dont est écrite l'oeuvre ?</h3><br />
+<h3>Que pensez-vous de l'écriture ?</h3><br />
 	<input type="radio" name="ecriture" value="court" />peu de pages    
 	<input type="radio" name="ecriture" value="aux nombreuses pages" />beaucoup de pages    
     <input type="radio" name="ecriture" value="au vocabulaire difficile à comprendre" />vocabulaire compliqué<br />
@@ -186,20 +185,19 @@ Pour publier ses critiques sur les livres du CDI, il faut d'abord se connecter �
 	<input type="radio" name="recommandation" value="tombe des mains." />tombe des mains    
 	<br /><br />
 </form>
- <br />
  
 <form name="critique">
 	<input type="button" onclick="myCritic()" value="Générer la critique" />
 	<input type="button" onclick="document.forms[0].reset();document.forms[1].reset();document.forms[2].reset();document.forms[3].reset();document.forms[4].reset();document.forms[5].reset();document.forms[6].reset();document.forms[7].reset();document.forms[8].reset();document.forms[9].reset();document.forms[10].reset();document.forms[11].reset();document.forms[12].reset();" value="Remettre à zéro" />
-  <br /><br /><br>
+  <br />
   
 <br />
 <h1>Personnalisation de la critique</h1>
 <br />
 		
-	<h3>Avant de copier la critique dans Esidoc :</h3><br />
-  - Relire et corriger les éventuelles coquilles<br />
-  - L'enrichir éventuellement en ajoutant d'autres éléments personnels.<br /><br />
+	<h3>Avant de copier-coller la critique dans Esidoc, n'oubliez pas de :</h3><br />
+  - la relire et corriger les éventuelles coquilles<br />
+  - l'enrichir éventuellement en ajoutant d'autres éléments personnels.<br />
   
 	<textarea id="order" cols="65" rows="10" readonly="readonly"></textarea>
 </form>
