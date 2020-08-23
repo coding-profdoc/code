@@ -4,8 +4,18 @@
 	<title>Générateur de critique littéraire</title>
 	<style type="text/css">
 		* {
-			color: #941341
+			font-family: sans-serif;
+			color: #941341;
+			h1: bold;
 		}
+		
+		.button
+			margin: auto;
+			padding: 10px 15px;
+			border-radius: 100px;
+			font-weight: bold;
+			background-color: #941341;
+			color:#FFFFFF;
 	</style>
 </head>
 
@@ -15,7 +25,7 @@ Faire une critique, c’est <b>justifier de manière convaincante et personnelle
 	<br /> <br />
 Pour publier ses critiques sur les livres du CDI, il faut d'abord se connecter à Esidoc via l'ENT. Ensuite, il faut chercher le livre dans Esidoc puis cliquer sur <b>Ajouter un avis</b></color>
 	<br /><br />
-	<h1><b>Présentation du livre</b></h1>
+	<h1>Présentation du livre</h1>
 <br />
 <form name="titre">
 	<b>Quel est le titre du livre ?</b>&nbsp;
@@ -75,13 +85,13 @@ Pour publier ses critiques sur les livres du CDI, il faut d'abord se connecter �
 </form>
 <form name="resume">
 	<b>Résumez l'histoire en une ou deux phrases ou expliquez le sujet principal du livre documentaire</b><br />
-<small><i>Pensez à répondre aux questions QUI?, QUOI?, POURQUOI?, QUAND et OÙ?, quand c'est précisé dans l'histoire.</i></small><br />
+<small><i>Pensez à répondre aux questions QUI?, QUOI?, POURQUOI?, QUAND et OÙ?, selon ce qui est précisé dans l'histoire.</i></small><br />
 	<textarea cols="65" rows="2" id="txt_resume"></textarea>
 	<br /><br />
  </form>
  
 	<br />
-<h1><b>Avis argumenté</b></h1>
+<h1>Avis argumenté</h1>
 <br />
  
  <form name="emotion">
@@ -137,10 +147,10 @@ Pour publier ses critiques sur les livres du CDI, il faut d'abord se connecter �
 	<input type="radio" name="ecriture" value="court" />peu de pages    
 	<input type="radio" name="ecriture" value="aux nombreuses pages" />beaucoup de pages    
     <input type="radio" name="ecriture" value="au vocabulaire difficile à comprendre" />vocabulaire compliqué<br />
-	<input type="radio" name="ecriture" value="facile à comprendre" />facile à comprendre    
+	<input type="radio" name="ecriture" value="au vocabulaire simple à comprendre" />facile à comprendre    
 	<input type="radio" name="ecriture" value="bien écrit" />bien écrite    
-	<input type="radio" name="ecriture" value="au style original" />style original<br />
-	<input type="radio" name="ecriture" value="[précisions sur la façon dont est écrite l'histoire]" />autre [à préciser dans la critique]    
+	<input type="radio" name="ecriture" value="au style original" />au style original<br />
+	<input type="radio" name="ecriture" value="[précisions sur la façon dont est écrite l'histoire]" />autre [à préciser]    
 	<br /><br />
 </form>
   
@@ -170,9 +180,9 @@ Pour publier ses critiques sur les livres du CDI, il faut d'abord se connecter �
 <h1><b>Personnalisation de la critique</b></h1>
 <br />
 		
-	<h3><b><span color="red" style="color: red;">Avant de copier la critique dans Esidoc : </span></h3></b><br />
+	<h3><b>Avant de copier la critique dans Esidoc :</b></h3><br />
   - Relire et corriger les éventuelles coquilles<br />
-  - L'enrichir en ajoutant d'autres éléments personnels.<br /><br />
+  - L'enrichir éventuellement en ajoutant d'autres éléments personnels.<br /><br />
   
 	<textarea id="order" cols="65" rows="10" readonly="readonly"></textarea>
 </form>
