@@ -10,7 +10,7 @@
 			font-family: Arial, Helvetica, sans-serif;
 		}
 		
-		.h1 {
+		.h1, h3 {
 			color: #941341;
 			font-weight: bold;
 		}
@@ -27,6 +27,7 @@
 
 <body>
 	<h1>Générateur en ligne de critique littéraire</h1>
+	<br /> <br />
 Esidoc permet de donner son avis de lecteur, appelé aussi critique littéraire. Elle vise à <b>relever les qualités et les défauts</b> d’un livre de fiction (roman, BD...) ou documentaire.
 Faire une critique, c’est <b>justifier de manière convaincante et personnelle son opinion</b>. On <b>partage son avis</b> avec les autres.
 	<br /> <br />
@@ -35,28 +36,28 @@ Pour publier ses critiques sur les livres du CDI, il faut d'abord se connecter �
 	<h1>Présentation du livre</h1>
 <br />
 <form name="titre">
-	<b>Quel est le titre du livre ?</b>&nbsp;
-	<input size="35" value="Titre du livre" id="txt_titre" type="text" /><br /><br>
-	<b>Qui est l'auteur du livre ?</b>&nbsp;
-	<input size="35" value="Nom de l'auteur" id="txt_auteur" type="text" />
+	<h3>Quel est le titre du livre ?</h3>
+	<input size="35" value="Titre" id="txt_titre" type="text" /><br /><br>
+	<h3>Qui est l'auteur du livre ?</h3>
+	<input size="35" value="Auteur" id="txt_auteur" type="text" />
 	<br /><br />
   </form>
   
 <form name="livre">
-	<b>De quel type de livre s'agit-il ?</b><br />
+	<h3>De quel type de livre s'agit-il ?</h3><br />
 	<input type="radio" name="livre" value="un album" />album    
 	<input type="radio" name="livre" value="une bande-dessinée" />bandes-dessinées    
     <input type="radio" name="livre" value="un conte" />conte
     <input type="radio" name="livre" value="un livre documentaire" />livre documentaire    
 	<input type="radio" name="livre" value="un manga" />manga    
-	<input type="radio" name="livre" value="une pièce de théâtre" />théâtre<br />
 	<input type="radio" name="livre" value="un recueil de poésie" />recueil de poésie    
 	<input type="radio" name="livre" value="un roman" />roman
+	<input type="radio" name="livre" value="une pièce de théâtre" />théâtre<br />
 	<br /><br />
   </form>
   
 <form name="genre">
-	<b>Quel est le genre de fiction ? ou Quel est le thème du livre documentaire ?</b><br />
+	<h3>Quel est le genre de fiction ? ou Quel est le thème du livre documentaire ?</h3><br />
 	<input type="radio" name="genre" value="animalier" />animalier    
 	<input type="radio" name="genre" value="d'amour" />amour    
     <input type="radio" name="genre" value="d'aventure" />aventure    
@@ -69,11 +70,11 @@ Pour publier ses critiques sur les livres du CDI, il faut d'abord se connecter �
 	<input type="radio" name="genre" value="policier" />policier<br />
     <input type="radio" name="genre" value="de science-fiction" />science-fiction    
 	<input type="radio" name="genre" value="de société" />société<br />
-	<input type="radio" name="genre" value="[précisions sur le genre de l'histoire ou sur le thème du livre documentaire]" />autre [à préciser dans la critique]
+	<input type="radio" name="genre" value="[précisions sur le genre de l'histoire ou sur le thème du livre documentaire]" />autre [à préciser une fois la critique générée]
 		<br /><br />
 </form>
 <form name="theme">
-	<b>Quel est le thème principal du livre ?</b><br />
+	<h3>Quel est le thème principal du livre ?</h3><br />
 	<input type="radio" name="theme" value="d'amitié" />l'amitié    
 	<input type="radio" name="theme" value="d'amour" />l'amour    
     <input type="radio" name="theme" value="des différences" />les différences    
@@ -87,12 +88,12 @@ Pour publier ses critiques sur les livres du CDI, il faut d'abord se connecter �
     <input type="radio" name="theme" value="de secret" />les secrets    
 	<input type="radio" name="theme" value="de sport" />le sport    
 	<input type="radio" name="theme" value="de voyages" />les voyages<br />
-	<input type="radio" name="theme" value="[précisions sur le thème du livre]" />autre [à préciser dans la critique]
+	<input type="radio" name="theme" value="[précisions sur le thème du livre]" />autre [à préciser une fois la critique générée]
 	<br /><br />
 </form>
 <form name="resume">
-	<b>Résumez l'histoire en une ou deux phrases ou expliquez le sujet principal du livre documentaire</b><br />
-<small><i>Pensez à répondre aux questions QUI?, QUOI?, POURQUOI?, QUAND et OÙ?, selon ce qui est précisé dans l'histoire.</i></small><br />
+	<h3>Résumez l'histoire en une ou deux phrases ou expliquez le sujet principal du livre documentaire</h3><br />
+<small><i>Pensez à répondre aux questions QUI ?, QUOI ?, POURQUOI ?, QUAND et OÙ ?, selon ce qui est précisé dans l'histoire.</i></small><br />
 	<textarea cols="65" rows="2" id="txt_resume"></textarea>
 	<br /><br />
  </form>
@@ -102,7 +103,7 @@ Pour publier ses critiques sur les livres du CDI, il faut d'abord se connecter �
 <br />
  
  <form name="emotion">
-<b>Qu'avez-vous ressenti à la lecture ?</b><br />
+<h3>Qu'avez-vous ressenti à la lecture ?</h3><br />
     <input type="radio" name="emotion" value="effrayante" />de la peur    
 	<input type="radio" name="emotion" value="joyeuse" />de la joie    
     <input type="radio" name="emotion" value="enrageante" />de la colère    
@@ -112,14 +113,14 @@ Pour publier ses critiques sur les livres du CDI, il faut d'abord se connecter �
 	<br /><br />
 </form>
 <form name="justifemo">
-<b>Pourquoi avez-vous ressenti cette émotion ?</b><br />
+<h3>Pourquoi avez-vous ressenti cette émotion ?</h3><br />
 <small><i>Continuez la phrase : car... <br /></i></small><br />
 	<textarea cols="65" rows="2" id="txt_justifemo">car </textarea>
 	<br /><br />
  </form>
  
  <form name="avis">
-	<b>Comment appréciez-vous cette oeuvre ?</b><br />
+	<h3>Comment appréciez-vous cette oeuvre ?</h3><br />
 	<input type="radio" name="avis" value="J'ai détesté" />★☆☆☆☆    
 	<input type="radio" name="avis" value="Je n'ai pas aimé" />★★☆☆☆    
     <input type="radio" name="avis" value="J'ai aimé" />★★★☆☆    
@@ -128,7 +129,7 @@ Pour publier ses critiques sur les livres du CDI, il faut d'abord se connecter �
 	<br /><br />
 </form>
 <form name="histoire">
-	<b>Comment pouvez-vous qualifier l'histoire ou l'argumentation de l'auteur dans le livre documentaire?</b><br />
+	<h3>Comment pouvez-vous qualifier l'histoire ou l'argumentation de l'auteur dans le livre documentaire?</h3><br />
 	<input type="radio" name="histoire" value="pleine d'actions" />pleine d'actions    
 	<input type="radio" name="histoire" value="captivante" />captivante    
 	<input type="radio" name="histoire" value="confuse" />confuse (difficile à comprendre)<br />
@@ -150,7 +151,7 @@ Pour publier ses critiques sur les livres du CDI, il faut d'abord se connecter �
   </form>
   
 <form name="ecriture">
-<b>Que pensez-vous de la façon dont est écrite l'oeuvre ?</b><br />
+<h3>Que pensez-vous de la façon dont est écrite l'oeuvre ?</h3><br />
 	<input type="radio" name="ecriture" value="court" />peu de pages    
 	<input type="radio" name="ecriture" value="aux nombreuses pages" />beaucoup de pages    
     <input type="radio" name="ecriture" value="au vocabulaire difficile à comprendre" />vocabulaire compliqué<br />
@@ -162,7 +163,7 @@ Pour publier ses critiques sur les livres du CDI, il faut d'abord se connecter �
 </form>
   
 <form name="recommandation">
-<b>Recommanderiez-vous ce livre ?</b><br />
+<h3>Recommanderiez-vous ce livre ?</h3><br />
 	<input type="radio" name="recommandation" value="est un chef d'oeuvre !" />un chef d'oeuvre !    
 	<input type="radio" name="recommandation" value="est à ne pas rater !" />à ne pas rater !    
     <input type="radio" name="recommandation" value="est à lire absolument" />à lire absolument !<br />
@@ -187,7 +188,7 @@ Pour publier ses critiques sur les livres du CDI, il faut d'abord se connecter �
 <h1>Personnalisation de la critique</h1>
 <br />
 		
-	<h3><b>Avant de copier la critique dans Esidoc :</b></h3><br />
+	<h3>Avant de copier la critique dans Esidoc :</h3><br />
   - Relire et corriger les éventuelles coquilles<br />
   - L'enrichir éventuellement en ajoutant d'autres éléments personnels.<br /><br />
   
