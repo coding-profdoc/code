@@ -1,22 +1,32 @@
-<meta content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<color="#941341">Esidoc permet de donner son avis de lecteur, appelé aussi critique littéraire. Elle vise à <b>relever les qualités et les défauts</b> d’un livre de fiction (roman, BD...) ou documentaire.
-Faire une critique, c’est <b>justifier de manière convaincante et personnelle son opinion</b>. On <b>partage son avis</b> avec les autres.</color>
+<head>
+	<meta content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Générateur de critique littéraire</title>
+	<style type="text/css">
+		* {
+			color: #941341
+		}
+	</style>
+</head>
+
+<body>
+Esidoc permet de donner son avis de lecteur, appelé aussi critique littéraire. Elle vise à <b>relever les qualités et les défauts</b> d’un livre de fiction (roman, BD...) ou documentaire.
+Faire une critique, c’est <b>justifier de manière convaincante et personnelle son opinion</b>. On <b>partage son avis</b> avec les autres.
 	<br /> <br />
-<color="#941341">Pour publier ses critiques sur les livres du CDI, il faut d'abord se connecter à Esidoc via l'ENT. Ensuite, il faut chercher le livre dans Esidoc puis cliquer sur <b>Ajouter un avis</b></color>
+Pour publier ses critiques sur les livres du CDI, il faut d'abord se connecter à Esidoc via l'ENT. Ensuite, il faut chercher le livre dans Esidoc puis cliquer sur <b>Ajouter un avis</b></color>
 	<br /><br />
-	<h1><color="#941341"><b>Présentation du livre</b></color></h1>
+	<h1><b>Présentation du livre</b></h1>
 <br />
 <form name="titre">
-	<color="#941341"><b>Quel est le titre du livre ?</b>&nbsp;
+	<b>Quel est le titre du livre ?</b>&nbsp;
 	<input size="35" value="Titre du livre" id="txt_titre" type="text" /><br /><br>
 	<b>Qui est l'auteur du livre ?</b>&nbsp;
 	<input size="35" value="Nom de l'auteur" id="txt_auteur" type="text" />
-	</color><br /><br />
+	<br /><br />
   </form>
   
 <form name="livre">
-	<font face="Arial"><b>De quel type de livre s'agit-il ?</b><br />
+	<b>De quel type de livre s'agit-il ?</b><br />
 	<input type="radio" name="livre" value="un album" />album    
 	<input type="radio" name="livre" value="une bande-dessinée" />bandes-dessinées    
     <input type="radio" name="livre" value="un conte" />conte
@@ -25,11 +35,11 @@ Faire une critique, c’est <b>justifier de manière convaincante et personnelle
 	<input type="radio" name="livre" value="une pièce de théâtre" />théâtre<br />
 	<input type="radio" name="livre" value="un recueil de poésie" />recueil de poésie    
 	<input type="radio" name="livre" value="un roman" />roman
-	<br /><br /></font>
+	<br /><br />
   </form>
   
 <form name="genre">
-	<font face="Arial"><b>Quel est le genre de fiction ? ou Quel est le thème du livre documentaire ?</b><br />
+	<b>Quel est le genre de fiction ? ou Quel est le thème du livre documentaire ?</b><br />
 	<input type="radio" name="genre" value="animalier" />animalier    
 	<input type="radio" name="genre" value="d'amour" />amour    
     <input type="radio" name="genre" value="d'aventure" />aventure    
@@ -43,10 +53,10 @@ Faire une critique, c’est <b>justifier de manière convaincante et personnelle
     <input type="radio" name="genre" value="de science-fiction" />science-fiction    
 	<input type="radio" name="genre" value="de société" />société<br />
 	<input type="radio" name="genre" value="[précisions sur le genre de l'histoire ou sur le thème du livre documentaire]" />autre [à préciser dans la critique]
-		<br /><br /></font>
+		<br /><br />
 </form>
 <form name="theme">
-<font face="Arial"><b>Quel est le thème principal du livre ?</b><br />
+	<b>Quel est le thème principal du livre ?</b><br />
 	<input type="radio" name="theme" value="d'amitié" />l'amitié    
 	<input type="radio" name="theme" value="d'amour" />l'amour    
     <input type="radio" name="theme" value="des différences" />les différences    
@@ -61,13 +71,13 @@ Faire une critique, c’est <b>justifier de manière convaincante et personnelle
 	<input type="radio" name="theme" value="de sport" />le sport    
 	<input type="radio" name="theme" value="de voyages" />les voyages<br />
 	<input type="radio" name="theme" value="[précisions sur le thème du livre]" />autre [à préciser dans la critique]
-	<br /><br /></font>
+	<br /><br /><
 </form>
 <form name="resume">
-<font face="Arial"><b>Résumez l'histoire en une ou deux phrases ou expliquez le sujet principal du livre documentaire</b><br />
+	<b>Résumez l'histoire en une ou deux phrases ou expliquez le sujet principal du livre documentaire</b><br />
 <small><i>Pensez à répondre aux questions QUI?, QUOI?, POURQUOI?, QUAND et OÙ?, quand c'est précisé dans l'histoire.</i></small><br />
 	<textarea cols="65" rows="2" id="txt_resume"></textarea>
-	<br /><br /></font>
+	<br /><br />
  </form>
  
 	<br />
@@ -92,7 +102,7 @@ Faire une critique, c’est <b>justifier de manière convaincante et personnelle
  </form>
  
  <form name="avis">
-	<b>Avez-vous apprécié cette oeuvre ?</b><br />
+	<b>Comment appréciez-vous cette oeuvre ?</b><br />
 	<input type="radio" name="avis" value="J'ai détesté" />★☆☆☆☆    
 	<input type="radio" name="avis" value="Je n'ai pas aimé" />★★☆☆☆    
     <input type="radio" name="avis" value="J'ai aimé" />★★★☆☆    
@@ -166,6 +176,7 @@ Faire une critique, c’est <b>justifier de manière convaincante et personnelle
   
 	<textarea id="order" cols="65" rows="10" readonly="readonly"></textarea>
 </form>
+	
 <script type="text/javascript">// <![CDATA[
 function myCritic() {
 var livre = document.forms["livre"];
@@ -235,3 +246,5 @@ var recommandation = document.forms["recommandation"];
   document.getElementById("order").value = document.getElementById("txt_titre").value + ", écrit par " + document.getElementById("txt_auteur").value + ", est " + txt_livre + txt_genre + "qui parle " + txt_theme + ". " + document.getElementById("txt_resume").value + " L'histoire est " + txt_emotion + " " + document.getElementById("txt_justifemo").value + ". " + txt_avis + " lire ce livre, car j'ai trouvé l'histoire " + txt_qualifhist + ". Ce livre " + txt_ecriture + " " + txt_recomm ;
 }
 // ]]></script>
+
+</body>
